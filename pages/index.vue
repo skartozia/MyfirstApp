@@ -1,8 +1,13 @@
 <template>
   <div class="container-fluid pt-1">
-    <button class="btn btn-primary">button</button>
-    <nuxt-link to="/addNew">
-      <button class="btn btn-primary">add new</button>
+    <nuxt-link to="/">
+      <button class="btn btn-primary">Home</button>
+    </nuxt-link>
+    <nuxt-link to="/Tables">
+      <button class="btn btn-primary">tables</button>
+    </nuxt-link>
+    <nuxt-link to="/datepicker">
+      <button class="btn btn-primary">datepicker</button>
     </nuxt-link>
 
     <!-- <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">

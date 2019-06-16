@@ -1,13 +1,11 @@
 <template>
-  <div class="container-fluid">
-    <h1>Add new</h1>
+  <div class="container-fluid pt-1">
     <nuxt-link to="/">
-      <h2>Home</h2>
+      <button class="btn btn-primary">Home</button>
     </nuxt-link>
-    <nuxt-link to="/euf">
-      <h2>js learn</h2>
+    <nuxt-link to="/datepicker">
+      <button class="btn btn-primary">datepicker</button>
     </nuxt-link>
-
     <table class="table table-striped table-bordered my-3">
       <thead style="background-color: #f0f0f0">
         <tr>

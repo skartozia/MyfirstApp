@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <h1 m-auto>learn js</h1>
+  <div class="container-fluid pt-1">
+    <nuxt-link to="/">
+      <button class="btn btn-primary">Home</button>
+    </nuxt-link>
+    <nuxt-link to="/Tables">
+      <button class="btn btn-primary">tables</button>
+    </nuxt-link>
+
+    <h1>datepicker</h1>
     <main class="container">
     <div class="row" style="padding-top: 100px">
         <div class="col">
