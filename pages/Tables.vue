@@ -13,45 +13,14 @@
           <th scope="col">Personal Number</th>
           <th scope="col">Gender</th>
           <th scope="col">BirthDate</th>
-          <th scope="col">Date of Expiry</th>
-          <th scope="col">Actions</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row"></th>
-          <td>nika</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td scope="row"></td>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row"></th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>@twitter</td>
-          <td>
-            <button type="button" class="btn btn-outline-secondary">Edit</button>
-            <button type="button" class="btn btn-outline-secondary">Delete</button>
-          </td>
+        <tr v-for="user in users" :key="user.id">
+          <td>{{user.name + ", " + user.email }}</td>
+          <td>{{user.username}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.address.street}}</td>
         </tr>
       </tbody>
     </table>
@@ -66,9 +35,10 @@
 export default {
   async asyncData() {
     const response = await fetch(
-      "https://jsonplaceholder.typicode.com/users?_limit=5"
+      "https://jsonplaceholder.typicode.com/users?_limit=8"
     );
     const users = await response.json();
+    console.log(users);
     return { users };
   },
   data: () => ({

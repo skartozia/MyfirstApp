@@ -6,3 +6,7 @@
 	fieldset და legend რატო არ მუშაობს nuxt-ში
 	jquery ინიციალიზაცია კოდში სად უნდა ჩაჯდეს?
 	bash-ი რომ გაჭედავს git commit -m "კომენტარი"-ის დროს რა უნდა ჩავწერო რაღაც :qm
+
+
+
+	nuxt Store (state managment)
