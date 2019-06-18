@@ -67,7 +67,7 @@
 <script>
 
 
-import {Buttons} from "~/components/form/Button/Buttons";
+import Buttons from "~/components/form/Button/Buttons";
 
 export default {
   async addNew() {}
